@@ -1,15 +1,16 @@
 import java.io.*;
 import java.util.Scanner;
+import java.util.Iterator;
 
 public class Stats
 {
   public static void main(String[] args)
   {
     Bag<Double> numbers=new Bag<Double>();
-	Scanner sc= new Scanner(System.in);
+	Iterator<double> i=collection.iterator();
 
-    while (sc.hasNext())
-		numbers.add(sc.nextDouble());
+    while (i.hasNext())
+		numbers=i.next();
 	int N= numbers.size();
 	
 	double sum=0.0;
